@@ -1,5 +1,5 @@
 # pokedex
-#modo de instalacion
+modo de instalacion
 
 Se clona el repositorio 
 
