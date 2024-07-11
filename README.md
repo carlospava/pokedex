@@ -11,7 +11,7 @@ Para empezar a correr el proyecto  se usa
 
 npm run dev
 
-La aplicacion es una pokedex usando la API PokeApi 
+La aplicacion es una pokedex usando la API PokeApi usando Open Cells
 
 enlace de la apli https://pokeapi.co/
 
