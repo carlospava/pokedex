@@ -1,8 +1,11 @@
 import { LitElement,css, html } from 'lit';
+import { customElement } from 'lit/decorators.js';
+import { styles } from './lista-pokemon-ui.css';
 
-
+@customElement('lista-pokemon-ui')
 class ListaPokemonUi  extends LitElement {
 
+  static styles = styles;
   static get properties() {
     return {
       nombre: { type: String },
@@ -25,9 +28,8 @@ class ListaPokemonUi  extends LitElement {
   render() {
     console.log('prueba')
     return html`
+   
       <div id="listapokemon">
-        <div id="listapokemoncheckbox">
-        </div>
         <div id="listapokemonimg">
           <img alt="pokemon" src=${this.imagenPokemon }>
         </div>
@@ -37,8 +39,12 @@ class ListaPokemonUi  extends LitElement {
           </ul>
         </div>
       </div>
+      
+    
     `;
   }
+
+  
   // handleClick(){
   //   const event=new CustomEvent('pokemon-seleccionado-batalla',{
   //       detail:{
@@ -55,4 +61,4 @@ class ListaPokemonUi  extends LitElement {
 
 }
 
-customElements.define('lista-pokemon-ui', ListaPokemonUi);
+//customElements.define('lista-pokemon-ui', ListaPokemonUi);

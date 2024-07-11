@@ -1,4 +1,5 @@
 import { getConfig } from '@open-cells/core';
+import { PageController } from '@open-cells/page-controller';
 
 const {
   appConfig: {
@@ -26,7 +27,7 @@ async function getListPokemon(): Promise<any> {
       const data = await response.json();
       allData.push(data);
   }
-
+  
   console.log(allData);
   return allData;
 }
